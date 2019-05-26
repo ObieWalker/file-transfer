@@ -1,0 +1,31 @@
+<div id="notice"><%= notice %></div>
+
+<h1 class="page-label">All Files</h1>
+
+<div class="attachments">
+  <div class="attachment-header">
+    <div>Title</div>
+    <div>Description</div>
+  </div>
+  <ul>
+    <% @attachments.each_with_index do |attachment, index| %>
+      <% if index % 2 == 0%>
+        <li class="attachments-list-item striped">
+          <div class="attachments-list-item-attr"><%= attachment.title %></div>
+          <div class="attachments-list-item-attr"><%= attachment.description %></div>
+          <div class="attachments-list-item-attr"><%= link_to 'Show', attachment %></div>
+          <div class="attachments-list-item-attr"><%= link_to 'Destroy', attachment, method: :delete, data: { confrim: 'Are you sure?'}, class: 'del' %></div>
+        </li>
+      <% else %>
+        <li class="attachments-list-item">
+          <div class="attachments-list-item-attr"><%= attachment.title %></div>
+          <div class="attachments-list-item-attr"><%= attachment.description %></div>
+          <div class="attachments-list-item-attr"><%= link_to 'Show', attachment %></div>
+          <div class="attachments-list-item-attr"><%= link_to 'Destroy', attachment, method: :delete, data: { confrim: 'Are you sure?'}, class: 'del' %></div>
+        </li>
+      <% end %>
+
+    <% end %>
+  </ul>
+  <%= link_to "Upload a File", new_attachment_path, class: 'btn-floating btn-large' %>
+</div>

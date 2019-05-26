@@ -1,0 +1,43 @@
+<!--<h1>Upload Files</h1>-->
+
+ <%= form_with(model: attachment, local: true) do |form| %>
+  <div class="form-container">
+
+  <div class="form-btn-holder">
+  <%= link_to 'Back', attachments_path, class: "btn btn-small form-back-btn" %>
+  </div>
+    <% if !@attachment.errors.empty? %>   
+      <div>     
+          <ul>   
+            <% @attachment.errors.full_messages.each do |msg| %>   
+                <li><%= msg %></li>   
+            <% end %>
+          </ul>
+      </div>
+    <% end %>
+
+     <div class="form-group">
+      <%= form.label :title%>
+      <%= form.text_field :title, class: 'form-control' %>
+    </div>
+
+     <div class="form-group">
+      <%= form.label :description%>
+      <%= form.text_field :description, class: 'form-control' %>
+    </div>
+
+     <div class="form-group">
+      <%#= form.label :files %>
+      <%= form.file_field :files, multiple: true, direct_upload: true, class: 'form-control' %>
+    </div>
+    <br />
+
+       <div>
+        <%= form.button type: "submit", id: "submit-uploader",
+        class: "btn btn-primary btn-md",  data: {disable_with: "Uploading..."} do %>
+          Upload
+          <% end %>
+      </div>
+    </div>
+  </div>
+<% end %> 
