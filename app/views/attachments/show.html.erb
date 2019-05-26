@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="label"><%= @attachment.title %></h1>
+
+<div class="container">
+  <div class>
+    <div id="label">Description: </div>
+    <div id="desc"> <%= @attachment.description %> </div>
+  </div>
+  <div class>
+    <% @attachment.files.each do |file| %>
+      <% if @attachment.files.first == file %>
+        <p>
+          <%= link_to file.filename, file, target: :blank %>
+          <%= link_to 'Download', rails_blob_path(file, disposition: :attachment), class: 'download-link' %>
+        </p>
+      <% else %>
+        <p>
+          <%= link_to file.filename, file, target: :blank %>
+          <%= link_to 'Download', rails_blob_path(file, disposition: :attachment), class: 'download-link'  %>
+        </p>
+      <% end %>
+    <% end %>
+  </div>
+  <div>
+    <div><%= link_to 'Back', attachments_path %></div>
+  </div>
+</div>
