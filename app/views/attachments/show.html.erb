@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
 
 <h1 class="label"><%= @attachment.title %></h1>
 
-<div class="container">
   <div class>
     <div id="label">Description: </div>
     <div id="desc"> <%= @attachment.description %> </div>
@@ -11,18 +11,18 @@
     <% @attachment.files.each do |file| %>
       <% if @attachment.files.first == file %>
         <p>
-          <%= link_to file.filename, file, target: :blank %>
-          <%= link_to 'Download', rails_blob_path(file, disposition: :attachment), class: 'download-link' %>
+          <%= file.filename%>
+          <%= link_to 'Download', download_path(id: file, file: file.blob.key, attachment: :attachment), class: "btn btn-success btn-md" %>
         </p>
       <% else %>
         <p>
-          <%= link_to file.filename, file, target: :blank %>
-          <%= link_to 'Download', rails_blob_path(file, disposition: :attachment), class: 'download-link'  %>
+          <%= file.filename %>
+          <%= link_to 'Download', download_path(file: file.blob.key, attachment: :attachment), class: 'download-link' %>
         </p>
       <% end %>
     <% end %>
   </div>
   <div>
-    <div><%= link_to 'Back', attachments_path %></div>
+    <div><%= link_to 'Back', attachments_path, class: "btn btn-warning btn-md" %></div>
   </div>
 </div>
