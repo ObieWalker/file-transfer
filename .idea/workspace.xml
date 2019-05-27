@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10596e46-092f-46ea-8d45-546cd4b819b1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/AV/wx/AVwxYJ1YoipqSGp44NgGRx5m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/Ak/Mn/AkMnLEu3Be1Joa7iHoXwB5DK" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/a3/G6/a3G6RvvsTLzZNvmtdgU67DPM" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/vB/ww/vBwwGQSUAJKR6L8dLpJEf4b8" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/attachments_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/attachments_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/attachment.rb" afterPath="$PROJECT_DIR$/app/models/attachment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/attachments/index.html.erb" afterPath="$PROJECT_DIR$/app/views/attachments/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/attachments/show.html.erb" afterPath="$PROJECT_DIR$/app/views/attachments/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -34,7 +23,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-              <folding />
+              <folding>
+                <marker date="1558965810776" expanded="true" signature="846:863" ph="..." />
+                <marker date="1558965810776" expanded="true" signature="846:870" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,7 +44,7 @@
       <file leaf-file-name="attachments_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/attachments_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
+            <state relative-caret-position="17">
               <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
@@ -305,12 +297,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558953624172</updated>
-      <workItem from="1558953625503" duration="1659000" />
+      <workItem from="1558953625503" duration="1941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1659000" />
+    <option name="totallyTimeSpent" value="1941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -367,7 +359,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
+          <folding>
+            <marker date="1558965810776" expanded="true" signature="846:863" ph="..." />
+            <marker date="1558965810776" expanded="true" signature="846:870" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -381,7 +376,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/attachments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
+        <state relative-caret-position="17">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>

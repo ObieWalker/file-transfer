@@ -10,9 +10,9 @@ class AttachmentsController < ApplicationController
 
   def download
     if @attachment.downloaded == true
-      format.html { redirect_to @attachment, message: 'File has already been downloaded.' }
+      redirect_to @attachment, notice: 'File has already been downloaded.'
     else
-      @attachment.downloaded = true
+      @attachment.update!(downloaded: true)
       file_key = params[:file]
       @blob_attachment = ActiveStorage::Blob.find_by_key(file_key)
       send_data @blob_attachment, filename: @blob_attachment.filename, type: @blob_attachment.content_type, disposition: 'attachment'
